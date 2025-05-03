@@ -1,0 +1,14 @@
+test -s ~/.alias && . ~/.alias || true
+PS1='\W > '
+
+export TERMINAL="urxvt"
+
+alias network='nmtui'
+alias bluetooth='bluetoothctl'
+alias bt='bluetoothctl'
+alias urxvt='urxvt &'
+
+alias nf='neofetch'
+
+alias steam='dbus-run-session nohup flatpak run com.valvesoftware.Steam &'
+alias 1password='dbus-run-session nohup flatpak run com.onepassword.OnePassword &'

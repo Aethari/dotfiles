@@ -1,0 +1,42 @@
+  # remap prefix to C-Space
+unbind C-b
+set-option -g prefix C-Space
+bind-key C-Space send-prefix
+
+# reload config with prefix-r
+bind r source-file ~/.tmux.conf
+
+# better pane switching
+bind -n M-k select-pane -U
+bind -n M-j select-pane -D
+bind -n M-h select-pane -L
+bind -n M-l select-pane -R
+
+# better splitting
+bind - split-window -v
+bind = split-window -h
+unbind '"'
+unbind %
+
+# disable bells
+set -g visual-activity off
+set -g visual-bell off
+set -g visual-silence off
+setw -g monitor-activity off
+set -g bell-action none
+
+# color changes
+set-option -g default-terminal "rxvt-unicode-256color"
+set-option -as terminal-overrides ",rxvt-unicode-256color:XT"
+
+set-option -g status on
+set -g status-style bg=colour232,fg=colour213
+set -g message-style bg=colour232,fg=colour213
+set -g pane-border-style fg=colour213
+set -g pane-active-border-style fg=colour213
+
+set -g window-status-style fg=colour213,bg=colour232
+set -g window-status-current-style fg=colour213,bg=colour232,bold
+
+set -g status-left "#[fg=colour213] #S #[default]"
+set -g status-right "#[fg=colour213]%Y-%m-%d %H:%M #[default]"

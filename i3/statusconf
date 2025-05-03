@@ -1,0 +1,34 @@
+general {
+	output_format="i3bar"
+	separator = " | "
+}
+
+order += "wireless"
+
+order += "memory"
+order += "cpu_usage"
+
+order += "volume"
+order += "time"
+
+wireless _first_ {
+	format_up = "NET: %quality at $essid"
+}
+
+memory {
+	format = "MEM: %used / %total"
+}
+
+cpu_usage {
+	format = "CPU: %usage"
+}
+
+volume master {
+	format = "Volume: %volume"
+	format_muted = "Volume (muted): %volume"
+	device = "pulse:1"
+}
+
+time {
+	format = "%m-%d-%Y %H:%M"
+}

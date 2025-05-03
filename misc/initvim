@@ -1,0 +1,141 @@
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+
+call plug#begin()
+	Plug 'rktjmp/lush.nvim'
+	Plug 'djaysky/nvim-sakura'
+
+	Plug 'nvim-lualine/lualine.nvim'
+	Plug 'nvim-tree/nvim-web-devicons'
+
+	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+	Plug 'nvim-lua/plenary.nvim'
+	Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
+call plug#end()
+
+command EditInitVim :exe 'edit' stdpath('config').'/init.vim'
+command ReloadConf source $MYVIMRC
+
+nnoremap ff <cmd>Telescope find_files<cr>
+
+" Disable compatibility with vi which can cause unexpected issues.
+set nocompatible
+
+" Enable type file detection. Vim will be able to try to detect the type of file in use.
+filetype on
+
+" Enable plugins and load plugin for the detected file type.
+filetype plugin on
+
+" Load an indent file for the detected file type.
+filetype indent on
+
+" Turn syntax highlighting on
+syntax on
+
+" Enable the correct color theme
+color nvim-sakura
+
+" Set shift width to 4 spaces.
+set shiftwidth=4
+
+" Use tabs instead of spaces
+set noexpandtab
+
+" Set tab width to 4 columns.
+set tabstop=4
+
+" Do not let cursor scroll below or above N number of lines when scrolling.
+set scrolloff=10
+
+" While searching though a file incrementally highlight matching characters as you type.
+set incsearch
+
+" Ignore capital letters during search.
+set ignorecase
+
+" Override the ignorecase option if searching for capital letters.
+" This will allow you to search specifically for capital letters.
+set smartcase
+
+" Show partial command you type in the last line of the screen.
+set showcmd
+
+" Show matching words during a search.
+set showmatch
+
+" Use highlighting when doing a search.
+set hlsearch
+
+" Set the commands to save in history default number is 20.
+set history=1000
+
+" Better backspacing
+set backspace=indent,eol,start
+set bs=2
+
+" Block temporary files
+set nobackup
+set nowritebackup  
+set noswapfile
+
+" Enable line numbers
+set number
+
+" Stop comment continuation
+set formatoptions-=cro
+
+" Word wrapping
+set wrap
+set linebreak
+
+" Stop cursor from moving when entering Insert mode
+inoremap <silent> <Esc> <Esc>`^
+
+" Disable arrow keys
+noremap <Up>    <Nop>
+noremap <Down>  <Nop>
+noremap <Left>  <Nop>
+noremap <Right> <Nop>
+
+" Use alt to exit terminal mode
+:tnoremap jj <C-\><C-n>
+
+" Use ctrl + hjkl to move across splits
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Use jj to exit insert/terminal mode
+inoremap jj <Esc>
+
+" Use ctrl+s to save
+:nmap <c-s> :w <CR>
+:imap <c-s> <Esc> :w <CR> i
+
+" Use ctrl+z to undo
+:nmap <C-z> :u <CR>
+:imap <C-z> <Esc> :u <CR> a
+
+" Use ctrl+shift+z to redo
+:nmap <C-S-z> :redo <CR>
+:imap <C-S-z> <Esc> :redo <CR> a
+
+" Use ctrl+r to open Telescope
+:map <C-r> :Telescope <CR>
+
+" UI settings
+:set go-=T
+:set go-=m
+:set go-=r
+:set go-=L
+
+lua <<EOF
+	require('lualine').setup({
+		options = {theme = "auto"},
+		icons_enabled = true,
+	})
+EOF
+

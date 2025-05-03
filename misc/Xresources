@@ -1,0 +1,16 @@
+! colors
+URxvt.transparent: true
+URxvt.shading: 20
+
+*.foreground: #c36ec4
+*.background: #18131e
+*.cursor: #c36ec4
+
+! ui changes
+URxvt.font: xft:JetBrains Mono Medium:size=10
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+
+! keybindings
+URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Control-Left: \033[1;5D

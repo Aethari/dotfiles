@@ -1,0 +1,11 @@
+# general settings
+set linenumbers
+set multibuffer
+set fill -8
+set tabsize 4
+
+# rebindings of default keys
+bind ^S savefile all
+bind ^H replace all
+bind ^O insert all
+bind ^V paste all
