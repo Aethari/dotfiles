@@ -1,10 +1,11 @@
 ! colors
-URxvt.transparent: true
-URxvt.shading: 20
+! *.foreground: #c36ec4
+! *.background: #18131e
 
-*.foreground: #c36ec4
-*.background: #18131e
-*.cursor: #c36ec4
+*.foreground: #ffffff
+*.background: #000000
+
+! *.cursor: #c36ec4
 
 ! ui changes
 URxvt.font: xft:JetBrains Mono Medium:size=10
