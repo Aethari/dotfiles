@@ -7,6 +7,7 @@ alias network='nmtui'
 alias bluetooth='bluetoothctl'
 alias bt='bluetoothctl'
 alias urxvt='urxvt &'
+alias rest='reset'
 
 alias nf='neofetch'
 
