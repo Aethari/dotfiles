@@ -8,6 +8,7 @@ alias bluetooth='bluetoothctl'
 alias bt='bluetoothctl'
 alias urxvt='urxvt &'
 alias rest='reset'
+alias killbg='kill -9 `jobs -ps`'
 
 alias nf='neofetch'
 
