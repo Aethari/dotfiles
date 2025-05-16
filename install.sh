@@ -5,7 +5,7 @@
 set -e
 
 # install all of my programs
-sudo xbps-install nano neovim xclip pulseaudio bluez i3 i3-gaps feh dmenu tmux flatpak curl rxvt-unicode-9.31_5 xrdb dolphin git github-cli xrandr htop neofetch gcc make spectacle xset
+sudo xbps-install nano neovim xclip pulseaudio bluez i3 i3-gaps feh dmenu tmux flatpak curl rxvt-unicode-9.31_5 xrdb git github-cli xrandr htop neofetch gcc make spectacle xset xz
 
 # enable relevant services
 sudo ln -s /etc/sv/bluetoothd /var/service/

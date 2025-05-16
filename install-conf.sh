@@ -2,6 +2,9 @@
 cp i3/i3conf ~/.config/i3/config
 cp i3/statusconf ~/.config/i3status/config
 
+# xfce
+tar xzf xfce/xfce4-backup.tar.gz -C ~
+
 # neovim
 # install vim-plug:
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
