@@ -19,6 +19,9 @@ mkdir ~/Sources
 chmod +x ./install-conf.sh
 ./install-conf.sh
 
+# makes backup script executable
+chmod +x ./backups/backup-all.sh
+
 # disable automatic power management on the wifi card
 if [ ! -d "/etc/NetworkManager" ]; then
 	sudo mkdir /etc/NetworkManager
