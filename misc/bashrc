@@ -4,14 +4,12 @@ PS1='\W > '
 export TERMINAL="urxvt"
 
 alias network='nmtui'
-alias bluetooth='bluetoothctl'
 alias bt='bluetoothctl'
-alias urxvt='urxvt &'
 alias rest='reset'
 alias killbg='kill -9 `jobs -ps`'
 alias len='wc -l'
-
 alias nf='neofetch'
+alias pico8='~/Apps/PICO8/pico8 &'
 
 alias steam='dbus-run-session nohup flatpak run com.valvesoftware.Steam &'
 alias 1password='dbus-run-session nohup flatpak run com.onepassword.OnePassword &'
