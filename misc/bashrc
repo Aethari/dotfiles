@@ -11,5 +11,4 @@ alias len='wc -l'
 alias nf='neofetch'
 alias pico8='~/Apps/PICO8/pico8 &'
 
-alias steam='dbus-run-session nohup flatpak run com.valvesoftware.Steam &'
 alias 1password='dbus-run-session nohup flatpak run com.onepassword.OnePassword &'
