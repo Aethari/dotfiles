@@ -11,6 +11,7 @@ chmod +x *.sh
 
 ./htop.sh
 ./Xresources.sh
+./nvim.sh
 ./nano.sh
 ./bash.sh
 ./tmux.sh
