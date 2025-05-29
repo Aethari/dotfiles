@@ -83,9 +83,8 @@ set number
 " Stop comment continuation
 set formatoptions-=cro
 
-" Word wrapping
-set wrap
-set linebreak
+" Stop word wrapping
+set nowrap
 
 " Stop cursor from moving when entering Insert mode
 inoremap <silent> <Esc> <Esc>`^
