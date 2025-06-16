@@ -1,13 +1,27 @@
 test -s ~/.alias && . ~/.alias || true
+
+# custom prompt
 PS1='\W > '
 
 export TERMINAL="urxvt"
 
+# terminal network manager
 alias network='nmtui'
+
+# terminal bluetooth manager
 alias bt='bluetoothctl'
+
+# reset terminal state - useful when using/making curses based apps
+# I always accidentially type "rest" instead of "reset", so I added
+# autocorrect
 alias rest='reset'
+
+# kill background processes
 alias killbg='kill -9 `jobs -ps`'
+
+# get the line count of files
 alias len='wc -l'
+
 alias nf='neofetch'
 alias pico8='~/Apps/PICO8/pico8 &'
 
