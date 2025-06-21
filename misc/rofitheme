@@ -40,7 +40,6 @@ listview {
 
 element {
     padding: 8px;
-    border-radius: 3px;
 }
 
 element selected {
