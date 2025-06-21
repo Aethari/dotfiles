@@ -119,7 +119,7 @@ bindsym $mod+a focus parent
 set $ws1 "1 Programming"
 set $ws2 "2 Browser"
 set $ws3 "3 Games"
-set $ws4 "4 Steam"
+set $ws4 "4 Game Launchers"
 set $ws5 "5 Doom Maps"
 set $ws6 "6"
 set $ws7 "7"
