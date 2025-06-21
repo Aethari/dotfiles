@@ -5,6 +5,9 @@ PS1='\W > '
 
 export TERMINAL="urxvt"
 
+# reminder to use ctrl+l instead of typing "clear"
+alias clear='echo Just use ctrl+L && echo'
+
 # terminal network manager
 alias network='nmtui'
 
