@@ -59,7 +59,10 @@ bindsym $mod+q exec urxvt
 bindsym Mod1+e kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -nb '#18131e' -nf '#c36ec4' -sb '#c36ec4' -sf '#18131e'
+# bindsym $mod+d exec --no-startup-id dmenu_run -nb '#18131e' -nf '#c36ec4' -sb '#c36ec4' -sf '#18131e'
+
+# start rofi (a better program launcher)
+bindsym $mod+d exec --no-startup-id rofi -show drun
 
 # change focus
 bindsym $mod+h focus left

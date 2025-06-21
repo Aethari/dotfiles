@@ -17,3 +17,6 @@ cp misc/Xresources ~/.Xresources
 cp misc/nanorc ~/.nanorc
 cp misc/bashrc ~/.bashrc
 cp misc/tmuxconf ~/.tmux.conf
+
+mkdir -p ~/.config/rofi/themes
+cp misc/rofitheme ~/.config/rofi/themes/aethari.rasi

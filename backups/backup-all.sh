@@ -15,3 +15,4 @@ chmod +x *.sh
 ./nano.sh
 ./bash.sh
 ./tmux.sh
+./rofi.sh

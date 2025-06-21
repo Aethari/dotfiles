@@ -1,0 +1,55 @@
+prompt {
+	enabled: false;
+}
+
+* {
+    /* Define your two colors here */
+    bg-color: #18131e;
+    fg-color: #c36ec4;
+    
+    /* Apply colors to all elements */
+    background-color: @bg-color;
+    text-color: @fg-color;
+    border-color: @fg-color;
+    
+    /* Remove default styling */
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    width: 600px;
+    padding: 20px;
+    border: 2px solid;
+}
+
+mainbox {
+    spacing: 10px;
+}
+
+inputbar {
+    padding: 10px;
+    border: 1px solid;
+}
+
+listview {
+    lines: 8;
+    spacing: 5px;
+}
+
+element {
+    padding: 8px;
+    border-radius: 3px;
+}
+
+element selected {
+    background-color: @fg-color;
+    text-color: @bg-color;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
