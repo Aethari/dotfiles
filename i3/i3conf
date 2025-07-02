@@ -6,6 +6,9 @@ exec_always light -S 65
 # disable the X server bell
 exec_always xset b off
 
+# disable screen saving (hopefully)
+exec_always xset s off
+
 # Start the second monitor - only necessary if the monitor didn't connect in
 # elogind
 exec_always --no-startup-id xrandr --output DisplayPort-0 --auto --right-of eDP

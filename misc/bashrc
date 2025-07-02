@@ -8,6 +8,9 @@ export TERMINAL="urxvt"
 # reminder to use ctrl+l instead of typing "clear"
 alias clear='echo Just use ctrl+L && echo'
 
+# see battery percentage with a single command
+alias bat='cat /sys/class/power_supply/BAT1/capacity'
+
 # terminal network manager
 alias network='nmtui'
 
