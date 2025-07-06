@@ -17,6 +17,9 @@ alias network='nmtui'
 # terminal bluetooth manager
 alias bt='bluetoothctl'
 
+# copying files to the clipboard from the command line
+alias clip='xclip -sel c < '
+
 # reset terminal state - useful when using/making curses based apps
 # I always accidentially type "rest" instead of "reset", so I added
 # autocorrect

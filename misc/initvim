@@ -2,6 +2,8 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 
 call plug#begin()
+	Plug 'aethari/nvim-sakura'
+
 	Plug 'nvim-lualine/lualine.nvim'
 	Plug 'nvim-tree/nvim-web-devicons'
 
@@ -32,7 +34,7 @@ filetype indent on
 syntax on
 
 " Enable the correct color theme
-color quiet
+color nvim-sakura
 
 " Set shift width to 4 spaces.
 set shiftwidth=4
