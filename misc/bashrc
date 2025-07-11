@@ -36,3 +36,6 @@ alias pico8='~/Apps/PICO8/pico8 &'
 
 alias steam='STEAM_RUNTIME_PREFER_HOST_LIBRARIES=1 steam'
 alias 1password='dbus-run-session nohup flatpak run com.onepassword.OnePassword &'
+
+# Created by `pipx` on 2025-07-11 00:31:56
+export PATH="$PATH:/home/djaysky/.local/bin"

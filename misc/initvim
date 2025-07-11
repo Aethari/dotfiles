@@ -133,7 +133,6 @@ inoremap jj <Esc>
 lua <<EOF
 	require('lualine').setup({
 		options = {theme = "auto"},
-		icons_enabled = true,
 	})
 EOF
 
