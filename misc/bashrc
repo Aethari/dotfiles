@@ -33,6 +33,7 @@ alias len='wc -l'
 
 alias nf='neofetch'
 alias pico8='~/Apps/PICO8/pico8 &'
+alias chocdoom='chocolate-doom -iwad ~/Downloads/doom.wad'
 
 alias steam='STEAM_RUNTIME_PREFER_HOST_LIBRARIES=1 steam'
 alias 1password='dbus-run-session nohup flatpak run com.onepassword.OnePassword &'
