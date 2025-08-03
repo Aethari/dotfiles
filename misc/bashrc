@@ -35,8 +35,9 @@ alias nf='neofetch'
 alias pico8='~/Apps/PICO8/pico8 &'
 alias chocdoom='chocolate-doom -iwad ~/Downloads/doom.wad'
 
-alias steam='STEAM_RUNTIME_PREFER_HOST_LIBRARIES=1 steam'
+alias steam='STEAM_RUNTIME_PREFER_HOST_LIBRARIES=1 steam &'
 alias 1password='dbus-run-session nohup flatpak run com.onepassword.OnePassword &'
+alias bolt='dbus-run-session nohup flatpak run com.adamcake.Bolt &'
 
 # Created by `pipx` on 2025-07-11 00:31:56
 export PATH="$PATH:/home/djaysky/.local/bin"
