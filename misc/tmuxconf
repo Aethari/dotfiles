@@ -6,6 +6,9 @@ bind-key C-Space send-prefix
 # reload config with prefix-r
 bind r source-file ~/.tmux.conf
 
+# enable mouse mode
+set -g mouse on
+
 # better pane switching
 bind -n M-k select-pane -U
 bind -n M-j select-pane -D
