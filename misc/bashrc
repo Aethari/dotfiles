@@ -31,7 +31,10 @@ alias killbg='kill -9 `jobs -ps`'
 # get the line count of files
 alias len='wc -l'
 
-alias nf='neofetch'
+# curl development alias
+alias build-curl='autoreconf -fi && ./configure --with-openssl && make'
+
+alias ff='fastfetch'
 alias pico8='~/Apps/PICO8/pico8 &'
 alias chocdoom='chocolate-doom -iwad ~/Downloads/doom.wad'
 
