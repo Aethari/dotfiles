@@ -37,6 +37,7 @@ alias build-curl='autoreconf -fi && ./configure --with-openssl && make'
 alias ff='fastfetch'
 alias pico8='~/Apps/PICO8/pico8 &'
 alias chocdoom='chocolate-doom -iwad ~/Downloads/doom.wad'
+alias nano='nano -Ynone'
 
 alias steam='STEAM_RUNTIME_PREFER_HOST_LIBRARIES=1 steam &'
 alias 1password='dbus-run-session nohup flatpak run com.onepassword.OnePassword &'
