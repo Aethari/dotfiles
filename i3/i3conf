@@ -8,6 +8,7 @@ exec_always xset b off
 
 # disable screen saving (hopefully)
 exec_always xset s off
+exec_always xset -dpms
 
 # Start the second monitor - only necessary if the monitor didn't connect in
 # elogind
@@ -125,10 +126,10 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1 Programming"
 set $ws2 "2 Browser"
-set $ws3 "3 Games"
-set $ws4 "4 Game Launchers"
-set $ws5 "5 Raspi"
-set $ws6 "6 Writing"
+set $ws3 "3 General"
+set $ws4 "4 Raspi"
+set $ws5 "5"
+set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"

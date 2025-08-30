@@ -41,7 +41,7 @@ alias nano='nano -Ynone'
 
 alias steam='STEAM_RUNTIME_PREFER_HOST_LIBRARIES=1 steam &'
 alias 1password='dbus-run-session nohup flatpak run com.onepassword.OnePassword &'
-alias bolt='dbus-run-session nohup flatpak run com.adamcake.Bolt &'
+alias discord='dbus-run-session nohup flatpak run com.discordapp.Discord &'
 
 # Created by `pipx` on 2025-07-11 00:31:56
 export PATH="$PATH:/home/djaysky/.local/bin"
