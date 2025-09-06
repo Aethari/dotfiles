@@ -3,16 +3,13 @@ prompt {
 }
 
 * {
-    /* Define your two colors here */
     bg-color: #18131e;
     fg-color: #c36ec4;
     
-    /* Apply colors to all elements */
     background-color: @bg-color;
     text-color: @fg-color;
     border-color: @fg-color;
     
-    /* Remove default styling */
     margin: 0;
     padding: 0;
     spacing: 0;

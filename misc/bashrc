@@ -31,6 +31,9 @@ alias killbg='kill -9 `jobs -ps`'
 # get the line count of files
 alias len='wc -l'
 
+# rename URXVT / terminal window
+alias ren='printf "\033]0;%s\007"'
+
 # curl development alias
 alias build-curl='autoreconf -fi && ./configure --with-openssl && make'
 
