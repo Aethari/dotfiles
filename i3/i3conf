@@ -127,7 +127,7 @@ bindsym $mod+a focus parent
 set $ws1 "1 Programming"
 set $ws2 "2 Browser"
 set $ws3 "3 General"
-set $ws4 "4 Raspi"
+set $ws4 "4 Discord / Comms"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
