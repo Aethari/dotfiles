@@ -3,8 +3,8 @@ prompt {
 }
 
 * {
-    bg-color: #18131e;
-    fg-color: #c36ec4;
+    bg-color: #000000;
+    fg-color: #b3b3b3;
     
     background-color: @bg-color;
     text-color: @fg-color;

@@ -19,9 +19,13 @@ exec_always feh --bg-scale ~/Pictures/Background/wallpaper.png
 
 # colors
 # class                 border  backgr. text    indicator child_border
-client.focused          #18131e #c36ec4 #18131e #c36ec4   #c36ec4
-client.focused_inactive #c36ec4 #18131e #c36ec4 #18131e   #18131e
-client.unfocused        #c36ec4 #18131e #c36ec4 #18131e   #18131e
+client.focused          #000000 #b3b3b3 #000000 #b3b3b3   #b3b3b3
+client.focused_inactive #b3b3b3 #000000 #b3b3b3 #000000   #000000
+client.unfocused        #b3b3b3 #000000 #b3b3b3 #000000   #000000
+
+#client.focused          #18131e #c36ec4 #18131e #c36ec4   #c36ec4
+#client.focused_inactive #c36ec4 #18131e #c36ec4 #18131e   #18131e
+#client.unfocused        #c36ec4 #18131e #c36ec4 #18131e   #18131e
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -172,13 +176,21 @@ bar {
 	status_command i3status
 	id bar-0
 
-	colors {
-		background #18131e
+	#colors {
+	#	background #18131e
 
-		statusline #c36ec4
-		separator #c36ec4
-		focused_workspace #18131e #c36ec4 #18131e
-		active_workspace #c36ec4 #18131e #c32ec4
-		inactive_workspace #c36ec4 #18131e #c32ec4
+	#	statusline #c36ec4
+	#	separator #c36ec4
+	#	focused_workspace #18131e #c36ec4 #18131e
+	#	active_workspace #c36ec4 #18131e #c32ec4
+	#	inactive_workspace #c36ec4 #18131e #c32ec4
+	#}
+
+	colors {
+		background #000000
+		separator  #000000
+		focused_workspace  #000000 #b3b3b3 #000000
+		active_workspace #b3b3b3 #000000 #b3b3b3
+		inactive_workspace #b3b3b3 #000000 #b3b3b3
 	}
 }
