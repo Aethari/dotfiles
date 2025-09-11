@@ -2,6 +2,7 @@ local core = require "core"
 local keymap = require "core.keymap"
 local config = require "core.config"
 local style = require "core.style"
+local plugins = config.plugins
 
 ------------------------------ Themes ----------------------------------------
 
@@ -12,6 +13,8 @@ core.reload_module("colors.sakura")
 keymap.add { ["alt+h"] = "root:switch-to-left" }
 keymap.add { ["alt+j"] = "root:switch-to-down" }
 keymap.add { ["alt+k"] = "root:switch-to-up" }
+
+keymap.add { ["ctrl+escape"] = "terminal:open-tab" }
 
 ------------------------------- Fonts ----------------------------------------
 
@@ -30,27 +33,40 @@ config.scroll_past_end = false
 
 ------------------------------ Plugins ----------------------------------------
 
--- disable plugin loading setting config entries:
+plugins.autocomplete.min_len = 1
 
--- disable plugin detectindent, otherwise it is enabled by default:
--- config.plugins.detectindent = false
+plugins.drawwhitespace.show_middle = false
 
-config.plugins.statusbar = {
+plugins.terminal.font = renderer.font.load(DATADIR .. "/fonts/JetBrainsMono-Regular.ttf", 14 * SCALE)
+plugins.terminal.bold_font = renderer.font.load(DATADIR .. "/fonts/JetBrainsMono-Regular.ttf", 14  * SCALE)
+plugins.terminal.size = 14
+
+plugins.terminal.background = {
+	[1] = 24,
+	[2] = 19,
+	[3] = 30,
+	[4] = 255
+}
+
+plugins.terminal.text = {
+	[1] = 195,
+	[2] = 110,
+	[3] = 196,
+	[4] = 255
 }
 
 ---------------------------- Miscellaneous -------------------------------------
 
 config.message_timeout = 3.0
 
--- modify list of files to ignore when indexing the project:
--- config.ignore_files = {
---   -- folders
---   "^%.svn/",        "^%.git/",   "^%.hg/",        "^CVS/", "^%.Trash/", "^%.Trash%-.*/",
---   "^node_modules/", "^%.cache/", "^__pycache__/",
---   -- files
---   "%.pyc$",         "%.pyo$",       "%.exe$",        "%.dll$",   "%.obj$", "%.o$",
---   "%.a$",           "%.lib$",       "%.so$",         "%.dylib$", "%.ncb$", "%.sdf$",
---   "%.suo$",         "%.pdb$",       "%.idb$",        "%.class$", "%.psd$", "%.db$",
---   "^desktop%.ini$", "^%.DS_Store$", "^%.directory$",
--- }
+config.ignore_files = {
+	-- folders
+	"^%.svn/",        "^%.git/",   "^%.hg/",        "^CVS/", "^%.Trash/", "^%.Trash%-.*/",
+	"^node_modules/", "^%.cache/", "^__pycache__/",
+	-- files
+	"%.pyc$",         "%.pyo$",       "%.exe$",        "%.dll$",   "%.obj$", "%.o$",
+	"%.a$",           "%.lib$",       "%.so$",         "%.dylib$", "%.ncb$", "%.sdf$",
+	"%.suo$",         "%.pdb$",       "%.idb$",        "%.class$", "%.psd$", "%.db$",
+	"^desktop%.ini$", "^%.DS_Store$", "^%.directory$", "%.o$",     "%.d$"
+}
 
