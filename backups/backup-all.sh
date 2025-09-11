@@ -16,3 +16,4 @@ chmod +x *.sh
 ./bash.sh
 ./tmux.sh
 ./rofi.sh
+./litexl.sh

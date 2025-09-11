@@ -1,0 +1,56 @@
+local core = require "core"
+local keymap = require "core.keymap"
+local config = require "core.config"
+local style = require "core.style"
+
+------------------------------ Themes ----------------------------------------
+
+core.reload_module("colors.sakura")
+
+--------------------------- Key bindings -------------------------------------
+
+keymap.add { ["alt+h"] = "root:switch-to-left" }
+keymap.add { ["alt+j"] = "root:switch-to-down" }
+keymap.add { ["alt+k"] = "root:switch-to-up" }
+
+------------------------------- Fonts ----------------------------------------
+
+style.font = renderer.font.load(DATADIR.."/fonts/JetBrainsMono-Regular.ttf", 14 * SCALE)
+style.code_font = renderer.font.load(DATADIR.."/fonts/JetBrainsMono-Regular.ttf", 14 * SCALE)
+
+-------------------------------- UI -----------------------------------------
+
+config.tab_close_button = false
+config.blink_period = 1.0
+
+config.indent_size = 4
+config.tab_type = "hard"
+
+config.scroll_past_end = false
+
+------------------------------ Plugins ----------------------------------------
+
+-- disable plugin loading setting config entries:
+
+-- disable plugin detectindent, otherwise it is enabled by default:
+-- config.plugins.detectindent = false
+
+config.plugins.statusbar = {
+}
+
+---------------------------- Miscellaneous -------------------------------------
+
+config.message_timeout = 3.0
+
+-- modify list of files to ignore when indexing the project:
+-- config.ignore_files = {
+--   -- folders
+--   "^%.svn/",        "^%.git/",   "^%.hg/",        "^CVS/", "^%.Trash/", "^%.Trash%-.*/",
+--   "^node_modules/", "^%.cache/", "^__pycache__/",
+--   -- files
+--   "%.pyc$",         "%.pyo$",       "%.exe$",        "%.dll$",   "%.obj$", "%.o$",
+--   "%.a$",           "%.lib$",       "%.so$",         "%.dylib$", "%.ncb$", "%.sdf$",
+--   "%.suo$",         "%.pdb$",       "%.idb$",        "%.class$", "%.psd$", "%.db$",
+--   "^desktop%.ini$", "^%.DS_Store$", "^%.directory$",
+-- }
+
