@@ -6,7 +6,7 @@ local plugins = config.plugins
 
 ------------------------------ Themes ----------------------------------------
 
-core.reload_module("colors.sakura")
+core.reload_module("colors.gruvbox_dark")
 
 --------------------------- Key bindings -------------------------------------
 
@@ -15,6 +15,7 @@ keymap.add { ["alt+j"] = "root:switch-to-down" }
 keymap.add { ["alt+k"] = "root:switch-to-up" }
 
 keymap.add { ["ctrl+escape"] = "terminal:open-tab" }
+keymap.add { ["ctrl+w"] = "terminal:root:close-tab" }
 
 ------------------------------- Fonts ----------------------------------------
 
@@ -36,33 +37,66 @@ config.scroll_past_end = false
 plugins.autocomplete.min_len = 1
 
 plugins.drawwhitespace.show_middle = false
+plugins.drawwhitespace.enabled = false
+
+plugins.colorpreview = false
+plugins.build = false
+plugins.debugger = false
+plugins.extend_selection_line = false
+plugins.gitblame = false
+plugins.indentguide = false
+plugins.scm = false
+plugins.settings = false
+plugins.sticky_scroll = false
+
+plugins.todotreeview.ignore_paths = {
+	[1] = "lex.yy.c",
+}
 
 plugins.terminal.font = renderer.font.load(DATADIR .. "/fonts/JetBrainsMono-Regular.ttf", 14 * SCALE)
 plugins.terminal.bold_font = renderer.font.load(DATADIR .. "/fonts/JetBrainsMono-Regular.ttf", 14  * SCALE)
 plugins.terminal.size = 14
 
+-- Terminal colors for the Sakura theme:
+-- <toggle comments with ctrl+/>
+
+-- plugins.terminal.background = {
+-- 	[1] = 24,
+-- 	[2] = 19,
+-- 	[3] = 30,
+-- 	[4] = 255
+-- }
+
+-- plugins.terminal.text = {
+-- 	[1] = 195,
+-- 	[2] = 110,
+-- 	[3] = 196,
+-- 	[4] = 255
+-- }
+
+-- "Real" terminal colors:
 plugins.terminal.background = {
-	[1] = 24,
-	[2] = 19,
-	[3] = 30,
+	[1] = 40,
+	[2] = 40,
+	[3] = 40,
 	[4] = 255
 }
 
 plugins.terminal.text = {
-	[1] = 195,
-	[2] = 110,
-	[3] = 196,
+	[1] = 146,
+	[2] = 131,
+	[3] = 116,
 	[4] = 255
 }
 
 ---------------------------- Miscellaneous -------------------------------------
 
-config.message_timeout = 3.0
+config.message_timeout = 1.0
 
 config.ignore_files = {
 	-- folders
 	"^%.svn/",        "^%.git/",   "^%.hg/",        "^CVS/", "^%.Trash/", "^%.Trash%-.*/",
-	"^node_modules/", "^%.cache/", "^__pycache__/",
+	"^node_modules/", "^%.cache/", "^__pycache__/", "^%..+$",
 	-- files
 	"%.pyc$",         "%.pyo$",       "%.exe$",        "%.dll$",   "%.obj$", "%.o$",
 	"%.a$",           "%.lib$",       "%.so$",         "%.dylib$", "%.ncb$", "%.sdf$",

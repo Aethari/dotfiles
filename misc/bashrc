@@ -44,5 +44,7 @@ alias nano='nano -Ynone'
 alias 1password='dbus-run-session nohup flatpak run com.onepassword.OnePassword &'
 alias discord='dbus-run-session nohup flatpak run com.discordapp.Discord &'
 
+export PATH="$PATH:/home/djaysky/.cargo/bin"
+
 # Created by `pipx` on 2025-07-11 00:31:56
 export PATH="$PATH:/home/djaysky/.local/bin"

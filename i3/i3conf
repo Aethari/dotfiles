@@ -32,7 +32,7 @@ client.unfocused        #b3b3b3 #000000 #b3b3b3 #000000   #000000
 font pango:monospace 8
 
 # Set window gaps
-gaps inner 20
+#gaps inner 20
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -55,6 +55,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # Bind pause+play
 bindsym XF86AudioPause exec --no-startup-id playerctl play-pause
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 
 # Bind skip/restart
 bindsym XF86AudioNext exec --no-startup-id playerctl next
