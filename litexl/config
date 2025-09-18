@@ -34,6 +34,24 @@ config.scroll_past_end = false
 
 ------------------------------ Plugins ----------------------------------------
 
+--[[
+	List of plugins:
+		- ide
+		- ide_c (if using C)
+		- wordcount(if not installed with ide)
+		- todotreeview (if not installed with ide)
+		- rainbowparen (if not installed with ide)
+		
+		- language_assembly_x86
+		- language_lua (if not installed by default)
+		- lsp_c
+		- lsp_lua
+		- terminal
+		
+		- gruvbox_dark (if not installed by default)
+		- welcome
+]]
+
 plugins.autocomplete.min_len = 1
 
 plugins.drawwhitespace.show_middle = false
