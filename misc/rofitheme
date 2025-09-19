@@ -4,7 +4,7 @@ prompt {
 
 * {
     bg-color: #000000;
-    fg-color: #b3b3b3;
+    fg-color: #ffffff;
     
     background-color: @bg-color;
     text-color: @fg-color;

@@ -1,9 +1,9 @@
 ! colors
-*.foreground: #c36ec4
-*.background: #18131e
+!*.foreground: #c36ec4
+!*.background: #18131e
 
-!*.foreground: #ffffff
-!*.background: #000000
+*.foreground: #ffffff
+*.background: #000000
 
 *.cursor: #c36ec4
 
@@ -11,6 +11,9 @@
 URxvt.font: xft:JetBrains Mono Medium:size=10
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
+
+URxvt.transparent: true
+URxvt.shading: 20
 
 ! keybindings
 URxvt.keysym.Control-Right: \033[1;5C
