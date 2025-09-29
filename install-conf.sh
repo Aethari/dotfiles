@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # i3
 cp i3/i3conf ~/.config/i3/config
 cp i3/statusconf ~/.config/i3status/config

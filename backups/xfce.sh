@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # save current directory and navigate to home
 SCRIPT_DIR=$(pwd)
 cd ~

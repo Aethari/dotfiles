@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd ..
 
 rm -fr i3/i3conf

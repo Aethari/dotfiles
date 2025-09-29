@@ -1,7 +1,37 @@
-test -s ~/.alias && . ~/.alias || true
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+unsetopt beep
+
+# Use vi keybinds
+bindkey -v
+
+# Enable auto correction
+setopt correct
+
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/djaysky/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# Download Znap, if it's not there yet.
+[[ -r ~/Sources/znap/znap.zsh ]] ||
+    git clone --depth 1 -- \
+        https://github.com/marlonrichert/zsh-snap.git ~/Sources/znap
+source ~/Sources/znap/znap.zsh  # Start Znap
+
+# Download zsh-autocomplete if it doesn't exist
+[[ -r ~/Sources/zsh-autocomplete/zsh-autocomplete.plugin.zsh ]] ||
+	git clone --depth 1 -- \
+		https://github.com/marlonrichert/zsh-autocomplete ~/Sources/zsh-autocomplete
+source ~/Sources/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # custom prompt
-PS1='BASH \W > '
+PS1='%~ > '
 
 export TERMINAL="urxvt"
 
@@ -42,8 +72,3 @@ alias i3lock='i3lock  --indicator --verif-text="" --pass-media --time-color=9999
 
 alias 1password='dbus-run-session nohup flatpak run com.onepassword.OnePassword &'
 alias discord='dbus-run-session nohup flatpak run com.discordapp.Discord &'
-
-export PATH="$PATH:/home/djaysky/.cargo/bin"
-
-# Created by `pipx` on 2025-07-11 00:31:56
-export PATH="$PATH:/home/djaysky/.local/bin"

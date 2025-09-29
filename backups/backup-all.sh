@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # runs every other backup script
 # NOTE: these scripts overwrite all existing saved configs in this repo
 
@@ -14,6 +16,7 @@ chmod +x *.sh
 ./nvim.sh
 ./nano.sh
 ./bash.sh
+./zsh.sh
 ./tmux.sh
 ./rofi.sh
 ./litexl.sh
