@@ -22,6 +22,7 @@ cp misc/htoprc ~/.config/htop/htoprc
 cp misc/Xresources ~/.Xresources
 cp misc/nanorc ~/.nanorc
 cp misc/bashrc ~/.bashrc
+cp mist/zshrc ~/.zshrc
 cp misc/tmuxconf ~/.tmux.conf
 cp misc/litexl ~/.config/lite-xl/init.lua
 
