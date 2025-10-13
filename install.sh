@@ -22,6 +22,15 @@ chmod +x ./install-conf.sh
 # makes backup script executable
 chmod +x ./backups/backup-all.sh
 
+# install personal non-xbps packages
+git clone https://github.com/Aethari/todo-find ~/Sources/todo-find
+cd ~/Sources/todo-find
+make install
+
+git clone https://github.com/Aethari/runic ~/Sources/runic
+cd ~/Sources/runic
+make install
+
 # disable automatic power management on the wifi card
 if [ ! -d "/etc/NetworkManager" ]; then
 	sudo mkdir /etc/NetworkManager
