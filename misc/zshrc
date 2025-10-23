@@ -73,4 +73,5 @@ alias i3lock='i3lock  --indicator --verif-text="" --pass-media --time-color=9999
 
 alias 1password='nohup dbus-run-session flatpak run com.onepassword.OnePassword & disown %1 && exit'
 alias discord='nohup dbus-run-session flatpak run com.discordapp.Discord & disown %1 && exit'
-alias steam='nohup dbus-run-session flatpak run com.valvesoftware.Steam & disown %1 && exit'
+#alias steam='nohup dbus-run-session flatpak run com.valvesoftware.Steam & disown %1 && exit'
+alias steam='steam & disown %1 && exit'
