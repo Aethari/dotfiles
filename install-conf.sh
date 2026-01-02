@@ -3,6 +3,8 @@
 # i3
 cp i3/i3conf ~/.config/i3/config
 cp i3/statusconf ~/.config/i3status/config
+cp i3/lock.sh ~/lock.sh
+chmod +x ~/lock.sh
 
 # xfce
 tar xzf xfce/xfce4-backup.tar.gz -C ~

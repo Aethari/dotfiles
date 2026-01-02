@@ -10,6 +10,7 @@ chmod +x *.sh
 
 ./xfce.sh
 ./i3.sh
+./i3lock.sh
 
 ./htop.sh
 ./Xresources.sh
